@@ -39,7 +39,7 @@ bot.on('text', msg => {
       cex.getCurrentPrice(parseMessage(msg).data)
           .then(data => bot.sendMessage(
              msg.chat.id,
-             data.lprice
+             '1 биток сейчас ' + data.lprice + ' ' + parseMessage(msg).data
           )
       )
       break;
